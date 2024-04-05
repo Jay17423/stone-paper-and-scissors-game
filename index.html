@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="heading">
+    <h1> Stone paper and scissors</h1>
+    
+  </div>
+  <div class="button">
+  <div class="Playerone">
+    <h2 id="poneheading">player one</h2>
+    <button class="ponebutton" id="stone" onclick="
+      var1 = `stone`;
+      
+    "></button>
+    <button class="ponebutton" id="paper" onclick="
+      var1 = `paper`;
+    
+    "></button>
+    <button class="ponebutton" id="scissors" onclick="
+      var1 = `scissors`;
+    
+    "></button>
+  </div>
+
+  <div class="Playertwo">
+    <h2 id="ptwoheading">player Two</h2>
+    <button class="ptwobutton" id="stone1" onclick="
+      var2 = `stone`;
+      if(var1 == var2){
+        alert(`Game Draw`);
+      }
+
+      else if(var1 == `paper` && var2 == `stone`){
+        alert(`Player one win`);
+      }
+
+      else if(var1 == `scissors` && var2 == `stone`){
+        alert(`Player Two win`);
+      }
+
+    
+    "></button>
+    <button class="ptwobutton" id="paper1" onclick="
+      var2 = `paper`;
+      if(var1 == var2){
+        alert(`Game Draw`);
+      }
+
+      else if(var1 == `stone` && var2 == `paper`){
+        alert(`Player Two win`);
+      }
+
+      else if(var1 == `scissors` && var2 == `paper`){
+        alert(`Player One win`);
+      }
+      
+    "></button>
+    <button class="ptwobutton" id="scissors1" onclick="
+      var2 = `scissors`;
+      if(var1 == var2){
+        alert(`Game Draw`);
+      }
+
+      else if(var1 == `paper` && var2 == `scissors`){
+        alert(`Player Two win`);
+      }
+
+      else if(var1 == `stone` && var2 == `scissors`){
+        alert(`Player one win`);
+      }
+   
+    "></button>
+  </div>
+</div>
+
+<script>
+  let var1 ='';
+  let var2 = '';
+
+</script>  
+</body>
+</html>
